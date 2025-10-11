@@ -1,26 +1,100 @@
 <!DOCTYPE html>
-<html>
-    <head>
-        <title>Une petite page HTML</title>
-        <meta charset="utf-8" />
-    </head>
-    <body>
-        <h1>Un titre de niveau 1</h1>
-        
-        <p>
-            Un premier petit paragraphe.
-        </p>
-        
-        <h2>Un titre de niveau 2</h2>
-        
-        <p>
-            Un autre paragraphe contenant un lien pour aller
-            sur le site <a href="http://koor.fr">KooR.fr</a>.
-        </p>
-         </div>
-    <div>
-    <a href="contact.html">Page de contact</a>
-    </div>
-    </body>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Bienvenue à Disneyland</title>
+  <style>
+    body {
+      background-color: rgb(233, 196, 222);
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 20px;
+    }
+
+    h1, h2 {
+      color: rgb(255, 0, 0);
+    }
+
+    p {
+      color: rgb(0, 33, 219);
+    }
+
+    i {
+      color: rgb(0, 0, 0);
+    }
+
+    img {
+      position: absolute;
+      width: 15%;
+      right: 20px;
+      top: 20px;
+      border-radius: 10px;
+    }
+
+    ul {
+      list-style-type: square;
+    }
+
+    a {
+      color: darkblue;
+      text-decoration: none;
+    }
+
+    a:hover {
+      text-decoration: underline;
+    }
+
+    .button {
+      background-color: #ffcc00;
+      border: none;
+      padding: 10px 20px;
+      font-size: 16px;
+      cursor: pointer;
+      margin-top: 10px;
+    }
+
+    .button:hover {
+      background-color: #ffaa00;
+    }
+  </style>
+</head>
+<body onload="afficherMessage()">
+  <h1>🎉 Bienvenue à Disneyland Paris !</h1>
+  <p><i>Le lieu où la magie devient réalité ✨</i></p>
+
+  <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/3/32/Disneyland_Paris_Castle.jpg/800px-Disneyland_Paris_Castle.jpg" alt="Château de Disneyland">
+
+  <hr>
+
+  <h2><u>Nos Attractions :</u></h2>
+  <ul>
+    <li>🎢 Space Mountain</li>
+    <li>👸 Le Château de la Belle au Bois Dormant</li>
+    <li>🛥️ Pirates des Caraïbes</li>
+  </ul>
+
+  <hr>
+
+  <h2><u>À propos :</u></h2>
+  <p>Disneyland Paris est un parc d’attractions situé à Marne-la-Vallée. Il a ouvert en 1992 et accueille des millions de visiteurs chaque année.</p>
+  <a href="https://www.disneylandparis.com/fr-fr/" target="_blank">Voir le site officiel</a>
+
+  <hr>
+
+  <h2><u>Contact :</u></h2>
+  <a href="contact.html">Page de contact</a>
+
+  <br><br>
+  <button class="button" onclick="alert('À très bientôt dans le monde magique de Disney ! 🎠')">Clique ici pour un message magique</button>
+
+  <script>
+    function afficherMessage() {
+      console.log("Bienvenue à Disneyland ! 🌟");
+    }
+  </script>
+</body>
 </html>
+
+
 
