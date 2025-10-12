@@ -24,7 +24,15 @@
       color: rgb(0, 0, 0);
     }
 
-    img {
+    .top-image {
+      width: 100%;
+      max-height: 300px;
+      object-fit: cover;
+      border-radius: 10px;
+      margin-bottom: 20px;
+    }
+
+    .castle-image {
       position: absolute;
       width: 15%;
       right: 20px;
@@ -59,11 +67,16 @@
     }
   </style>
 </head>
-<body onload="afficherMessage()">
+
+<body>
+  <!-- Image du haut -->
+  <img class="top-image" src="https://media.disneylandparis.com/d4th/en-usd/images/n037009_2029mar16_world_30-anniversary-fireworks-castle_16-9_tcm1861-233244.jpg" alt="Feu d'artifice Disneyland">
+
   <h1>🎉 Bienvenue à Disneyland Paris !</h1>
   <p><i>Le lieu où la magie devient réalité ✨</i></p>
 
-  <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/3/32/Disneyland_Paris_Castle.jpg/800px-Disneyland_Paris_Castle.jpg" alt="Château de Disneyland">
+  <!-- Image du château -->
+  <img class="castle-image" src="https://upload.wikimedia.org/wikipedia/commons/thumb/3/32/Disneyland_Paris_Castle.jpg/800px-Disneyland_Paris_Castle.jpg" alt="Château de Disneyland">
 
   <hr>
 
@@ -86,15 +99,20 @@
   <a href="contact.html">Page de contact</a>
 
   <br><br>
+
+  <!-- Bouton avec une alerte -->
   <button class="button" onclick="alert('À très bientôt dans le monde magique de Disney ! 🎠')">Clique ici pour un message magique</button>
 
+  <br><br>
+
+  <!-- ✅ Nouveau bouton simple en JavaScript -->
+  <button onclick="document.body.style.backgroundColor = 'lightblue'">
+    Change la couleur du fond
+  </button>
+
+  <!-- ✅ Alerte au chargement de la page -->
   <script>
-    function afficherMessage() {
-      console.log("Bienvenue à Disneyland ! 🌟");
-    }
+    alert("Bienvenue à Disneyland 🎉");
   </script>
 </body>
 </html>
-
-
-
